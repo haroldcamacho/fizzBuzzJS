@@ -23,4 +23,10 @@ describe('Fizzbuzz Function Tests', function () {
     it('Should return the number when the input is not a multiple of 5 or 3 like "17" ', function () {
         assert.equal(fizzBuzzFunctions.fizzbuzz(17), 17);
     });
+    it('Should return "Fizz" when the input is a multiple of 3 like 9', function () {
+        assert.equal(fizzBuzzFunctions.fizzbuzz(9), "Fizz");
+    });
+    it('Should return "Buzz" when the input is a multiple of 5 like 10', function () {
+        assert.equal(fizzBuzzFunctions.fizzbuzz(10), "Buzz");
+    });
 });
