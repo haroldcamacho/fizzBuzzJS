@@ -33,5 +33,19 @@ describe('Fizzbuzz Function Tests', function () {
         it('Should return an empty Sequence when the input is 0" ', function () {
             assert.equal(fizzBuzzFunctions.generateFizzbuzzSequence(0).length, 0);
         });
+        it('Should return a Sequence of size 1 and the word "FizzBuzz" when the input is 1" ', function () {
+            let resultSequence=fizzBuzzFunctions.generateFizzbuzzSequence(1)
+            assert.equal(resultSequence.length, 1);
+            assert.equal(resultSequence[0], "FizzBuzz");
+        });
+        it('Should return a Sequence of size 2, when the input is 2" ', function () {
+            let resultSequence=fizzBuzzFunctions.generateFizzbuzzSequence(2)
+            assert.equal(resultSequence.length, 2);
+        });
+        it('Should contain the word FizzBuzz and the value "1" , when the input is "2" in the positions "0" and "1" respectively', function () {
+            let resultSequence=fizzBuzzFunctions.generateFizzbuzzSequence(2)
+            assert.equal(resultSequence[0], "FizzBuzz");
+            assert.equal(resultSequence[1], 1);
+        });
     });
 });
