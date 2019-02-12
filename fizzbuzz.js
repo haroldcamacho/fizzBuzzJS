@@ -13,7 +13,7 @@ function fizzbuzz(num) {
 };
 
 function generateFizzbuzzSequence(value) {
-  let sequence=[];
+  let sequence = [];
   for (let count = 0; count < value; count++) {
     sequence.push(fizzbuzz(count));
     console.log(sequence[count]);
@@ -21,5 +21,6 @@ function generateFizzbuzzSequence(value) {
   return sequence;
 };
 module.exports = {
-  fizzbuzz, generateFizzbuzzSequence
+  fizzbuzz,
+  generateFizzbuzzSequence
 };
