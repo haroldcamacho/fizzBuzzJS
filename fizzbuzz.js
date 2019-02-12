@@ -18,4 +18,6 @@ function generateFizzbuzzSequence(value) {
   }
 };
 
-generateFizzbuzzSequence(4);
+module.exports = {
+  fizzbuzz, generateFizzbuzzSequence
+};
