@@ -29,4 +29,9 @@ describe('Fizzbuzz Function Tests', function () {
     it('Should return "Buzz" when the input is a multiple of 5 like 10', function () {
         assert.equal(fizzBuzzFunctions.fizzbuzz(10), "Buzz");
     });
+    describe('Fizzbuzz Sequence Generator Function Tests', function () { 
+        it('Should return an empty Sequence when the input is 0" ', function () {
+            assert.equal(fizzBuzzFunctions.generateFizzbuzzSequence(0).length, 0);
+        });
+    });
 });
