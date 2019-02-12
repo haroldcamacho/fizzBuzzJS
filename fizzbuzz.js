@@ -13,11 +13,13 @@ function fizzbuzz(num) {
 };
 
 function generateFizzbuzzSequence(value) {
+  let sequence=[];
   for (let count = 0; count < value; count++) {
-    console.log(fizzbuzz(count));
+    sequence.push(fizzbuzz(count));
+    console.log(sequence[count]);
   }
+  return sequence;
 };
-
 module.exports = {
   fizzbuzz, generateFizzbuzzSequence
 };
